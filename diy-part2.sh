@@ -18,3 +18,5 @@ sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/M
 
 # Modify hostname
 #sed -i 's/OpenWrt/P3TERX-Router/g' package/base-files/files/bin/config_generate
+rm -rf feeds/smpackage/vlmcsd
+rm -rf feeds/smpackage/luci-app-vlmcsd
