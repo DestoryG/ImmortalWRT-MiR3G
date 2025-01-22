@@ -45,19 +45,11 @@ jobs:
         sudo docker image prune --all --force
         sudo -E apt-get -qq update
         sudo bash -c 'bash <(curl -s https://build-scripts.immortalwrt.org/init_build_environment.sh)'
-        sudo -E apt-get -qq install neofetch screenfetch
         sudo -E apt-get -qq autoremove --purge
         sudo -E apt-get -qq clean
         sudo timedatectl set-timezone "$TZ"
         sudo mkdir -p /workdir
         sudo chown $USER:$GROUPS /workdir
-
-    - name: Show Hardware Info
-      run: |
-        echo "Neofetch Result:"
-        neofetch
-        echo "Screenfetch Result:"
-        screenfetch
 
     - name: Clone source code
       working-directory: /workdir
