@@ -5,7 +5,7 @@ A ImmortalWRT Firmware Build For Xiaomi Router 3G V1, With Some App For Daily Us
 Want Lean's OpenWRT-Fork? [Check This Firmware](https://github.com/DestoryG/LeanWRT-MiR3G-510)
 
 ## Tips
-Kernel Version:Follow The Mainline
+Kernel Version: Follow The Mainline
 
 
 ## Credits
