@@ -21,3 +21,4 @@ sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/M
 rm -rf feeds/smpackage/vlmcsd
 rm -rf feeds/smpackage/luci-app-vlmcsd
 rm -rf feeds/smpackage/{base-files,dnsmasq,firewall*,fullconenat,libnftnl,nftables,ppp,opkg,ucl,upx,vsftpd*,miniupnpd-iptables,wireless-regdb}
+sed -i '/PKG_FIXUP/d' feeds/packages/libs/libffi/Makefile
